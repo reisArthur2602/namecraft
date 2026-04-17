@@ -1,6 +1,6 @@
 import { Providers } from '@/providers';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Outfit } from 'next/font/google';
+import { Geist, Geist_Mono, Syne } from 'next/font/google';
 import './globals.css';
 
 const geistSans = Geist({
@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
     variable: '--font-mono',
     subsets: ['latin'],
 });
-const outfit = Outfit({
+const syne = Syne({
     variable: '--font-heading',
     subsets: ['latin'],
 });
@@ -65,7 +65,7 @@ const RootLayout = ({
         <Providers>
             <html
                 lang="en"
-                className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} dark`}
+                className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} dark`}
             >
                 <body>{children}</body>
             </html>

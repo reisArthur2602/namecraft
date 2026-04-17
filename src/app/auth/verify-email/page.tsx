@@ -68,16 +68,13 @@ const VerifyEmailPage = () => {
                         <h1 className="text-2xl font-semibold tracking-tight ">
                             Verifique seu e-mail
                         </h1>
-                        <div className='my-4 space-y-2'>
-
-                        <p className="text-muted-foreground">
-                            Enviamos um link de acesso para
-                        </p>
-                        {email && (
-                            <p className="inline-block border-border rounded-full px-3 py-1.5 text-sm font-medium bg-muted/40 ">
-                                {maskEmail(email)}
-                            </p>
-                        )}
+                        <div className="my-4 space-y-2">
+                            <p>Enviamos um link de acesso para</p>
+                            {email && (
+                                <p className="inline-block border-border rounded-full px-3 py-1.5 text-sm font-medium bg-muted/40 ">
+                                    {maskEmail(email)}
+                                </p>
+                            )}
                         </div>
                     </div>
 
